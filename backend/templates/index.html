@@ -6,46 +6,29 @@
     <title>registration form</title>
 </head>
 <body>
-    <p>hi! welcome to signup page</p>
-    <p>today is a {{ day_of_week }}
-    </p>
-    <p>the time is {{ current_time }}</p>
+   
     <div class="center">
 
 <form action="/submit" method="POST">
-    <label for="name">Name</label>
-<input type="text" name="name" id="name" placeholder="enter your name">
-<br>
-<br>
-<label for="password">password</label>
-<input type="password" name="password" id="password" placeholder="password">
-<br>
-<br>
+   
+<h1>To Do List</h1>
+    <br>
+    <br>
 
-<input type="submit" value="submit">
+    <input type="text" id="name" placeholder="item name">
+    <br>
+    <br>
+
+    <input type="text" id="description" placeholder="item description">
+
+    <input type="submit" id="submit" value="Submit">
 
 </form>
    <a href="get data" ></a><button>view data></button>
 </div>
 
   <style>
-        body {
-            background-color: black;
-
-        }
-
-
-        p { 
-            text-align: center;
-            font-size: 38px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: yellow;    }
-    .center{
-        margin: auto;
-        width: 50%;
-        border: 30% solid green;
-        padding: 10px;
-    }
+       
     </style>
 </body>
 </html>
