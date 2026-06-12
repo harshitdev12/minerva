@@ -9,9 +9,9 @@
 <div class="center">    
   
 
-<form action="/submit" method="POST">
+<form action="/submittodoitem" method="POST">
      <section></section>
-    <label for="name">Name</label>
+   
    
         
 
@@ -19,12 +19,13 @@
   <h1>To Do List</h1>
     <br>
     <br>
-
-    <input type="text" id="name" placeholder="item name">
+<label for="name">Item Name:</label>
+    <input type="text" name="itemName" id="name" placeholder="item name">
     <br>
     <br>
+<label for="description">Item Description:</label>
 
-    <input type="text" id="description" placeholder="item description">
+    <input type="text" name="itemDescription" id="description" placeholder="item description">
 
     <input type="submit" id="submit" value="Submit">
 </form>
@@ -33,26 +34,8 @@
 </div>
 
   <style>
-        body {
-            background-color:aqua;
-
-        }
-
-
-        p { 
-            text-align: center;
-            font-size: 38px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(38, 0, 255);    }
-    .center{
-        margin: auto;
-        width: 50%;
-        border: 30% solid green;
-        padding: 10px;
-    }
-    section{
-        text-align: center;
-    }
+      
+       
     </style>
 </body>
 </html>
