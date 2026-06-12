@@ -12,14 +12,19 @@ collection = db['flask-tutorial']
 
 app = Flask(__name__)
 
-@app.route('/submit', methods=['POST'])
-def submit():
+@app.route('/submittodoitem', methods=['POST'])
+def submit_todo_item():
+ 
 
+    item_name = request.form.get('itemName')
+    item_description = request.form.get('itemDescription')
+    todo_data = {
+        "itemName": item_name,
+        "itemDescription": item_description
+    }
 
-   form_data = dict(request.json)
-
-   collection.insert_one(form_data)
-   return 'data submitted succesfully!'
+    collection.insert_one(todo_data)
+    return "todo item saved succesfully!"
 
 @app.route('/view')
 def view():
